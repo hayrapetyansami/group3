@@ -79,40 +79,59 @@ const app = {
 			item7: "Բրաունի"
 		}
 	],
-	callCenter(address, telNumber, isDelivery, isOpen, type){
-		return `
-			Բարև Ձեզ, Ձեզ սպասարկում է ${app.restaurantStaff[13].customer}ը
-			${
-				address = app.restaurantDetails[0].address !== undefined ?
-				"Մեր հասցեն է " + app.restaurantDetails[0].address :
-				"Կներեք, մենք հասցե չունենք"
-			}
-			${
-				telNumber = app.restaurantDetails[1].telNumber !== undefined ?
-				"Մեր հեռախոսահամարն է " + app.restaurantDetails[1].telNumber :
-				"Կներեք, մենք չունենք հեռախոսահամար"
-			}
-			${
-				isDelivery = app.restaurantDetails[6].isDelivery === true ?
-				"Այո, կարող ենք իրականացնել Ձեր պատվերը" :
-				"Կներեք, բայց մեր առաքիչը զբաղված է, պետք է դուք մոտենաք"
-			}
-			${
-				isDelivery = app.restaurantDetails[7].isOpen === true ?
-				"Այո, ներկա պահին բաց ենք" :
-				"Ոչ, կներեք մենք փակ ենք"
-			}
+	callCenter(){
+		if (!app.restaurantDetails[7].isOpen) {
+			return `Կներեք մենք փակ ենք, դիմեք վաղը`;
+		} else {
+			return `
+				Բարև Ձեզ, Ձեզ սպասարկում է ${app.restaurantStaff[13].customer}ը
+				${
+					app.restaurantDetails[0].address !== undefined ?
+					"Մեր հասցեն է " + app.restaurantDetails[0].address :
+					"Կներեք, մենք հասցե չունենք"
+				}
+				${
+					app.restaurantDetails[1].telNumber !== undefined ?
+					"Մեր հեռախոսահամարն է " + app.restaurantDetails[1].telNumber :
+					"Կներեք, մենք չունենք հեռախոսահամար"
+				}
+				${
+					app.restaurantDetails[6].isDelivery === true ?
+					"Այո, կարող ենք իրականացնել Ձեր պատվերը" :
+					"Կներեք, բայց մեր առաքիչը զբաղված է, պետք է դուք մոտենաք"
+				}
+				${
+					app.restaurantDetails[7].isOpen === true ?
+					"Այո, ներկա պահին բաց ենք" :
+					"Ոչ, կներեք մենք փակ ենք"
+				}
 		`;
+		}
 	},
 	isOpened(start, end) {
 		start >= end ?
 		app.restaurantDetails[7].isOpen = false :
 		app.restaurantDetails[7].isOpen = true;
+	},
+	favoriteCook (favCook) {
+		if (!app.restaurantDetails[7].isOpen) {
+			return `Մենք փակ ենք`;
+		} else {
+			if (favCook === app.restaurantStaff[8].cook) {
+				return `կներեք, ես ոչինիչ չեմ պատվիրի`;
+			} else if (favCook === app.restaurantStaff[9].cook) {
+				return `Մեծ սիրով կկատարեմ պատվեր`;
+			} else {
+				return `Կներեք, ոչ ոք աշխատանքի չեն`;
+			}
+		}
 	}
 };
 
-app.isOpened(9, 24);
+app.isOpened(55, 24);
 
 const client = app.callCenter();
+const client1 = app.favoriteCook(app.restaurantStaff[8].cook);
 
 console.log(client);
+console.log(client1);
