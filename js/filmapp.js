@@ -1,16 +1,6 @@
 "use strict";
 
-let numberOfFilms;
-
-function start() {
-	numberOfFilms = parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", ""));
-	while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms) || numberOfFilms < -1) {
-		if (numberOfFilms === 0) {
-			break;
-		}
-		numberOfFilms = parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", ""));
-	}
-}
+const numberOfFilms = start();
 
 const personalMovieDB = {
 	count: numberOfFilms,
@@ -20,6 +10,22 @@ const personalMovieDB = {
 	privat: true
 };
 
+detectUserPersonalLevel();
+rememberMyFilms();
+yourFavoriteGenres();
+showMyDB();
+
+function start(numberOfFilms) {
+	numberOfFilms = parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", ""));
+	while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms) || numberOfFilms < -1) {
+		if (numberOfFilms === 0) {
+			break;
+		}
+		numberOfFilms = parseInt(prompt("Քանի՞ ֆիլմ եք դիտել այսօր", ""));
+	}
+
+	return numberOfFilms;
+}
 function rememberMyFilms () {
 	for (let i = 0; i < 2; i++) {
 		const a = prompt("Ո՞ր ֆիլմն եք վերջերս դիտել", "");
@@ -34,7 +40,6 @@ function rememberMyFilms () {
 		}
 	}
 }
-
 function detectUserPersonalLevel () {
 	if (numberOfFilms < 10) {
 		console.log("Դուք նայել եք բավականին քիչ ֆիլմեր");
@@ -46,7 +51,6 @@ function detectUserPersonalLevel () {
 		console.log("Տեղի է ունեցել խնդիր, ըստ երևույթի դուք թիվ չեք նշել");
 	}
 }
-
 function showMyDB() {
 	if (personalMovieDB.privat) {
 		console.log(personalMovieDB);
@@ -54,7 +58,6 @@ function showMyDB() {
 		console.log("Մեր տվյալների բազան փակ է");
 	}
 }
-
 function yourFavoriteGenres () {
 	for (let i = 0; i <= 2; i++) {
 		const genres = prompt(`Ձեր նախընտրելի ժանրը ${i + 1}`);
@@ -66,9 +69,3 @@ function yourFavoriteGenres () {
 		}
 	}
 }
-
-start();
-detectUserPersonalLevel();
-rememberMyFilms();
-yourFavoriteGenres();
-showMyDB();
