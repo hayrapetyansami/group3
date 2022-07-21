@@ -22,33 +22,33 @@ button:hover {
 	color: #000;
 }
 
-.flags_wrapper {
+#flags {
 	margin-top: 50px;
 }
-.flags_wrapper > .flag {
+#flags > .flag {
 	width: 180px;
 	height: 40px;
 }
 
-.flags_wrapper> .flag:nth-child(1) {
+#flags> .flag:nth-child(1) {
 	background: #f00;
 }
 
-.flags_wrapper> .flag:nth-child(2) {
+#flags> .flag:nth-child(2) {
 	background: #00f;
 }
 
-.flags_wrapper> .flag:nth-child(3) {
+#flags> .flag:nth-child(3) {
 	background: #ff8800;
 }
 
-.wrapper {
+#wrapper {
 	display: flex;
 	gap: 10px;
 	margin-top: 35px;
 }
 
-.wrapper > .item {
+#wrapper > .box {
 	width: 150px;
 	height: 150px;
 	background: #666aaa;
