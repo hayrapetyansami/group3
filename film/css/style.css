@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  list-style-position: inside;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+#top_nav {
+  background: #171131;
+}
+
+#top_nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+#top_nav .container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#top_nav .container #social a {
+  margin-right: 8px;
+  color: #f55d22;
+  font-size: 18px;
+}
+
+#top_nav .container #social a:hover {
+  color: #fff;
+}
+
+#top_nav .container #login a {
+  margin-left: 20px;
+}
+
+#top_nav .container #login a:nth-child(1):hover {
+  color: #f55d22;
+}
+
+#top_nav .container #login a:nth-child(2) {
+  border: 1px solid #fff;
+  padding: 7px 10px;
+  border-radius: 8px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#top_nav .container #login a:nth-child(2):hover {
+  border-color: #f55d22;
+  background: #f55d22;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0px;
+  background: #171131;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
+nav .container #logo a {
+  color: #f55d22;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+nav .container #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .container #menu li {
+  list-style-type: none;
+}
+
+nav .container #menu li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+nav .container #menu li a::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f55d22;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+}
+
+nav .container #menu li a:hover {
+  color: #f55d22;
+}
+
+nav .container #menu li a:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  nav .container #menu {
+    display: none;
+  }
+}
+
+header img {
+  width: 100%;
+}
+
+main {
+  margin-top: 40px;
+  min-height: 800px;
+}
+
+main .container #main_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container #main_header #films p {
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 50px;
+}
+
+main .container #main_header #films p [data-rm] {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -6px;
+  font-size: 25px;
+  color: #f00;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+main .container #main_header #films p:hover [data-rm] {
+  display: block;
+}
+
+main .container #main_header #add {
+  width: 50%;
+}
+
+main .container #main_header #add input, main .container #main_header #add button {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+main .container #main_header #add input {
+  border: 1px solid #ccc;
+  width: 70%;
+}
+
+main .container #main_header #add button {
+  border: 1px solid green;
+  background: green;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  main .container #main_header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  main .container #main_header #add {
+    margin-bottom: 30px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+  }
+}
+
+main .container #main_promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container #main_promo .mp img {
+  width: 100%;
+  height: 200px;
+}
+/*# sourceMappingURL=style.css.map */
