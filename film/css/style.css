@@ -197,7 +197,7 @@ main .container #main_header #add input, main .container #main_header #add butto
   border-radius: 8px;
 }
 
-main .container #main_header #add input {
+main .container #main_header #add input[type="text"] {
   border: 1px solid #ccc;
   width: 70%;
 }
@@ -206,6 +206,26 @@ main .container #main_header #add button {
   border: 1px solid green;
   background: green;
   color: #fff;
+  cursor: pointer;
+}
+
+main .container #main_header #add #isFavorite {
+  margin-top: 20px;
+}
+
+main .container #main_header #add #isFavorite label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+main .container #main_header #add #isFavorite label input {
+  display: block;
+  margin-right: 10px;
   cursor: pointer;
 }
 

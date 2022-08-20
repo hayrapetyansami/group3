@@ -181,7 +181,7 @@ main {
 					border-radius: $br;
 				}
 
-				input {
+				input[type="text"] {
 					border: 1px solid #ccc;
 					width: 70%;
 				}
@@ -191,6 +191,22 @@ main {
 					background: green;
 					color: #fff;
 					cursor: pointer;
+				}
+
+				#isFavorite {
+					margin-top: 20px;
+
+					label {
+						display: flex;
+						align-items: center;
+						cursor: pointer;
+
+						input {
+							display: block;
+							margin-right: 10px;
+							cursor: pointer;
+						}
+					}
 				}
 			}
 
