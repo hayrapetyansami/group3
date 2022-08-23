@@ -1,7 +1,6 @@
 "use strict";
 
 const poster = document.querySelector("header img");
-const advs = document.querySelectorAll("#main_promo .mp");
 const filmsBlock = document.getElementById("films");
 const form = document.querySelector("#add");
 
@@ -14,7 +13,7 @@ const _DB = {
 };
 
 function init () {
-	advs.forEach(adv => adv.remove());
+	document.querySelectorAll("#main_promo .mp").forEach(adv => adv.remove());
 	poster.src = "img/bg2.jpg";
 	if (poster.src.slice(31) === "bg1.jpg") {
 		poster.alt = "GEMINI MAN";
