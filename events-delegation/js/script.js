@@ -7,6 +7,8 @@ const wrapper = document.querySelector("#wrapper");
 // localName === "button"
 // type === "submit"
 
+// matches("button") || matches("h1.title")
+
 wrapper.addEventListener("click", (e) => {
 	if (e.target && e.target.matches("button.this")) {
 		console.log(e.target);
