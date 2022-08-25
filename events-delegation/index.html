@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			user-select: none;
+		}
+
+		#wrapper {
+			display: flex;
+			gap: 10px;
+			padding: 50px;
+			background: #cc1166;
+		}
+
+		#wrapper > button {
+			display: block;
+			padding: 10px 35px;
+			border: none;
+			background: #fff;
+			font-weight: bold;
+			font-size: 15px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<button>1</button>
+		<button class="this">2</button>
+		<button>3</button>
+		<button class="this">4</button>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
