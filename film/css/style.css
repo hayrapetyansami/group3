@@ -2,10 +2,9 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   list-style-position: inside;
 }
 
@@ -18,51 +17,36 @@
 #top_nav {
   background: #171131;
 }
-
 #top_nav .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 60px;
 }
-
 #top_nav .container a {
   color: #fff;
   text-decoration: none;
 }
-
 #top_nav .container #social a {
   margin-right: 8px;
   color: #f55d22;
   font-size: 18px;
 }
-
 #top_nav .container #social a:hover {
   color: #fff;
 }
-
 #top_nav .container #login a {
   margin-left: 20px;
 }
-
 #top_nav .container #login a:nth-child(1):hover {
   color: #f55d22;
 }
-
 #top_nav .container #login a:nth-child(2) {
   border: 1px solid #fff;
   padding: 7px 10px;
   border-radius: 8px;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 #top_nav .container #login a:nth-child(2):hover {
   border-color: #f55d22;
   background: #f55d22;
@@ -75,20 +59,12 @@ nav {
   left: 0px;
   background: #171131;
 }
-
 nav .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 80px;
 }
-
 nav .container #logo a {
   color: #f55d22;
   text-decoration: none;
@@ -96,31 +72,22 @@ nav .container #logo a {
   letter-spacing: 2px;
   font-size: 18px;
 }
-
 nav .container #menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 600px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 nav .container #menu li {
   list-style-type: none;
 }
-
 nav .container #menu li a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 nav .container #menu li a::before {
   content: "";
   width: 0%;
@@ -129,18 +96,14 @@ nav .container #menu li a::before {
   position: absolute;
   bottom: -12px;
   left: 0;
-  -webkit-transition: width 0.2s;
   transition: width 0.2s;
 }
-
 nav .container #menu li a:hover {
   color: #f55d22;
 }
-
 nav .container #menu li a:hover::before {
   width: 100%;
 }
-
 @media screen and (max-width: 768px) {
   nav .container #menu {
     display: none;
@@ -155,16 +118,10 @@ main {
   margin-top: 40px;
   min-height: 800px;
 }
-
 main .container #main_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 main .container #main_header #films p {
   width: 100%;
   margin-bottom: 10px;
@@ -172,7 +129,6 @@ main .container #main_header #films p {
   position: relative;
   margin-right: 50px;
 }
-
 main .container #main_header #films p [data-rm] {
   display: none;
   position: absolute;
@@ -183,79 +139,102 @@ main .container #main_header #films p [data-rm] {
   cursor: pointer;
   font-weight: bold;
 }
-
 main .container #main_header #films p:hover [data-rm] {
   display: block;
 }
-
 main .container #main_header #add {
   width: 50%;
 }
-
 main .container #main_header #add input, main .container #main_header #add button {
   padding: 10px;
   border-radius: 8px;
 }
-
-main .container #main_header #add input[type="text"] {
+main .container #main_header #add input[type=text] {
   border: 1px solid #ccc;
   width: 70%;
 }
-
 main .container #main_header #add button {
   border: 1px solid green;
   background: green;
   color: #fff;
   cursor: pointer;
 }
-
 main .container #main_header #add #isFavorite {
   margin-top: 20px;
 }
-
 main .container #main_header #add #isFavorite label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
 }
-
 main .container #main_header #add #isFavorite label input {
   display: block;
   margin-right: 10px;
   cursor: pointer;
 }
-
 @media screen and (max-width: 768px) {
   main .container #main_header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    flex-flow: column;
   }
   main .container #main_header #add {
     margin-bottom: 30px;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     width: 100%;
   }
 }
-
 main .container #main_promo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 main .container #main_promo .mp img {
   width: 100%;
   height: 200px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.modal_wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+}
+.modal_wrapper.modal_wrapper-active {
+  display: flex;
+}
+.modal_wrapper form {
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+}
+.modal_wrapper form h3 {
+  margin-bottom: 15px;
+  color: #555;
+  letter-spacing: 2px;
+}
+.modal_wrapper form input {
+  display: block;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  width: 100%;
+  min-width: 280px;
+  border: 1px solid #ccc;
+  color: #5d5d5d;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.modal_wrapper form button {
+  display: block;
+  margin-top: 15px;
+  background: green;
+  padding: 7px 15px;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

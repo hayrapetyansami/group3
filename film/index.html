@@ -23,8 +23,8 @@
 				</a>
 			</div>
 			<div id="login">
-				<a href="#">Sign in</a>
-				<a href="#">Sign up</a>
+				<a href="#" data-in>Sign in</a>
+				<a href="#" data-up>Sign up</a>
 			</div>
 		</div>
 	</div>
@@ -80,6 +80,14 @@
 			</div>
 		</div>
 	</main>
+	<div class="modal_wrapper" data-in-modal>
+		<form>
+			<h3>Sign In</h3>
+			<input type="text" name="username-or-email" placeholder="username or email">
+			<input type="password" name="password" placeholder="your password">
+			<button>Sign In</button>
+		</form>
+	</div>
 	<script src="js/main.js"></script>
 </body>
 </html>

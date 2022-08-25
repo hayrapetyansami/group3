@@ -3,6 +3,10 @@
 const poster = document.querySelector("header img");
 const filmsBlock = document.getElementById("films");
 const form = document.querySelector("#add");
+const signInModalBtn = document.querySelector("[data-in]");
+const signInModal = document.querySelector("[data-in-modal]");
+
+// տնայինի ակտիվ կլասսը modal_wrapper-active
 
 const _DB = {
 	movies: [
@@ -40,7 +44,6 @@ form.addEventListener("submit", (e) => {
 	createFilmsList(_DB.movies, filmsBlock);
 	e.target.reset();
 });
-
 function setSort(arr) {
 	arr.sort();
 }
@@ -70,5 +73,4 @@ function removeFilmFromList (selector) {
 		});
 	});
 }
-
 createFilmsList(_DB.movies, filmsBlock);
