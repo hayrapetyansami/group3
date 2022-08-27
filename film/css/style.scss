@@ -17,6 +17,7 @@
 
 $bg : #171131;
 $og : #f55d22;
+$ogDark : #df480d;
 $br : 8px;
 
 #top_nav{
@@ -228,6 +229,48 @@ main {
 				img {
 					width: 100%;
 					height: 200px;
+				}
+			}
+		}
+	}
+	.tabs {
+		margin-top: 60px;
+		.tab {
+			.tab_btns {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 30px;
+
+				.tab_btn {
+					padding: 10px;
+					background: $og;
+					flex-basis: calc(100%/4);
+					text-align: center;
+					color: #fff;
+					cursor: pointer;
+
+					&.tab_btn-active {
+						background: $ogDark
+					}
+				}
+			}
+
+			.tab_bodys {
+				margin-top: 20px;
+
+				.tab_body {
+					display: none;
+
+					&.tab_body-active {
+						display: block;
+					}
+					p {
+						color: #5d5d5d;
+						font-size: 17px;
+						line-height: 25px;
+						letter-spacing: 1px;
+						text-align: justify;
+					}
 				}
 			}
 		}

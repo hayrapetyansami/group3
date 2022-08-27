@@ -5,8 +5,8 @@ const filmsBlock = document.getElementById("films");
 const form = document.querySelector("#add");
 const signInModalBtn = document.querySelector("[data-in]");
 const signInModal = document.querySelector("[data-in-modal]");
-
-// տնայինի ակտիվ կլասսը modal_wrapper-active
+const tabBtns = document.querySelectorAll(".tab_btn");
+const tabBodys = document.querySelectorAll(".tab_body");
 
 const _DB = {
 	movies: [
@@ -15,7 +15,6 @@ const _DB = {
 		"Doctor Zhivago", "The Deer Hunter", "Rocky"
 	]
 };
-
 function init () {
 	document.querySelectorAll("#main_promo .mp").forEach(adv => adv.remove());
 	poster.src = "img/bg2.jpg";
@@ -27,7 +26,6 @@ function init () {
 	document.title = poster.alt;
 }
 init();
-
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	let val = e.target.firstElementChild.value.trim();
@@ -74,3 +72,40 @@ function removeFilmFromList (selector) {
 	});
 }
 createFilmsList(_DB.movies, filmsBlock);
+
+signInModalBtn.addEventListener("click", (e) => {
+	e.preventDefault();
+	signInModal.classList.add("modal_wrapper-active");
+});
+signInModal.addEventListener("click", (e) => {
+	// if (e.target && e.target.matches(".modal_wrapper-active")) {
+	// 	e.target.classList.remove("modal_wrapper-active");
+	// }
+
+	if (e.target && e.target.classList.contains("modal_wrapper-active")) {
+		e.target.classList.remove("modal_wrapper-active");
+	}
+});
+
+// tabBtns.forEach((btn, index) => {
+// 	btn.addEventListener("click", () => {
+// 		tabBtns.forEach((btn, index) => {
+// 			btn.classList.remove("tab_btn-active");
+// 			tabBodys[index].classList.remove("tab_body-active");
+// 		});
+
+// 		btn.classList.add("tab_btn-active");
+// 		tabBodys[index].classList.add("tab_body-active");
+// 	});
+// });
+
+for (let i = 0; i < tabBtns.length; i++) {
+	tabBtns[i].addEventListener("click", () => {
+		for (let x = 0; x < tabBtns.length; x++) {
+			tabBtns[x].classList.remove("tab_btn-active");
+			tabBodys[x].classList.remove("tab_body-active");
+		}
+		tabBtns[i].classList.add("tab_btn-active");
+		tabBodys[i].classList.add("tab_body-active");
+	});
+}
