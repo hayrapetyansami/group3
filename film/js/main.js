@@ -99,13 +99,13 @@ signInModal.addEventListener("click", (e) => {
 // 	});
 // });
 
+let state = 0;
 for (let i = 0; i < tabBtns.length; i++) {
 	tabBtns[i].addEventListener("click", () => {
-		for (let x = 0; x < tabBtns.length; x++) {
-			tabBtns[x].classList.remove("tab_btn-active");
-			tabBodys[x].classList.remove("tab_body-active");
-		}
+		tabBtns[state].classList.remove("tab_btn-active");
+		tabBodys[state].classList.remove("tab_body-active");
 		tabBtns[i].classList.add("tab_btn-active");
 		tabBodys[i].classList.add("tab_body-active");
+		state = i;
 	});
 }
