@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#box {
+	width: 400px;
+	height: 400px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin: 40px auto;
+	padding: 20px;
+	border: 1px solid #f00;
+}
+
+#btn {
+	display: block;
+	margin: 40px auto;
+	padding: 10px 25px;
+	cursor: pointer;
+}
