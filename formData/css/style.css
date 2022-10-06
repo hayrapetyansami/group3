@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	padding: 30px;
+	font-family: Arial;
+}
+
+form {
+	margin-bottom: 40px;
+}
+
+form h2 {
+	margin-bottom: 12px;
+	color: #5d5d5d;
+}
+
+form input {
+	padding: 8px;
+}
+
+form input[type="text"], input[type="password"] {
+	border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+	border: 1px solid #ff2288;
+	background: #ff2288;
+	color: #fff;
+	cursor: pointer;
+}
+
+.message {
+	margin-top: 15px;
+	font-size: 17px;
+	font-family: Arial;
+}
