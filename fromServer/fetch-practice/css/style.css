@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+body {
+	padding: 30px;
+	background: #555;
+	font-family: Arial;
+	color: #fff;
+}
+
+form {
+	padding: 30px;
+	background: #fff;
+	margin: 50px auto;
+	max-width: 400px;
+	border-radius: 10px;
+}
+
+form input {
+	display: block;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-bottom: 16px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+button {
+	padding: 8px 32px;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	font-size: 15px;
+	border-radius: 10px;
+	background: #ff0088;
+}
