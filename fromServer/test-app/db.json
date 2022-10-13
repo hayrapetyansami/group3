@@ -1,0 +1,120 @@
+{
+  "product": [
+    {
+      "xiaomi": {
+        "id": 1,
+        "brand": "Xiaomi",
+        "model": "Note 8T",
+        "storage": "128GB",
+        "price": "118.900 AMD",
+        "colors": [
+          "Gray",
+          "Black",
+          "Purple"
+        ]
+      },
+      "google": {
+        "brand": "Google",
+        "model": "Pixel 7",
+        "storage": "512GB",
+        "price": "415.900 AMD",
+        "colors": [
+          "Brown",
+          "White",
+          "Silver"
+        ]
+      },
+      "samsung": {
+        "brand": "Samsung",
+        "model": "S21 ultra",
+        "storage": "256GB",
+        "price": "438,650 AMD",
+        "colors": [
+          "Black",
+          "White",
+          "Blue"
+        ]
+      },
+      "id": 1
+    },
+    [
+      {
+        "id": 1,
+        "brand": "Xiaomi",
+        "model": "Note 8T",
+        "storage": "128GB",
+        "price": "118.900 AMD",
+        "colors": [
+          "Gray",
+          "Black",
+          "Purple"
+        ]
+      },
+      {
+        "brand": "Google",
+        "model": "Pixel 7",
+        "storage": "512GB",
+        "price": "415.900 AMD",
+        "colors": [
+          "Brown",
+          "White",
+          "Silver"
+        ]
+      },
+      {
+        "brand": "Samsung",
+        "model": "S21 ultra",
+        "storage": "256GB",
+        "price": "438,650 AMD",
+        "colors": [
+          "Black",
+          "White",
+          "Blue"
+        ]
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "brand": "Xiaomi",
+        "model": "Note 8T",
+        "storage": "128GB",
+        "price": "118.900 AMD",
+        "colors": [
+          "Gray",
+          "Black",
+          "Purple"
+        ]
+      },
+      {
+        "brand": "Google",
+        "model": "Pixel 7",
+        "storage": "512GB",
+        "price": "415.900 AMD",
+        "colors": [
+          "Brown",
+          "White",
+          "Silver"
+        ]
+      },
+      {
+        "brand": "Samsung",
+        "model": "S21 ultra",
+        "storage": "256GB",
+        "price": "438,650 AMD",
+        "colors": [
+          "Black",
+          "White",
+          "Blue"
+        ]
+      }
+    ]
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ]
+}
