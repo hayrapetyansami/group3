@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+body {
+	padding: 30px;
+	font-family: Arial;
+	background: #ddd;
+}
+
+#root {
+	padding: 30px;
+	background: #fff;
+	border-radius: 5px;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#screenBlock {
+	display: flex;
+	margin-bottom: 24px;
+}
+
+#screenBlock input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px 0px 0px 5px;
+	width: 100%;
+}
+
+#screenBlock button {
+	background: #1a90ee;
+	color: #fff;
+	border: none;
+	padding: 0px 8px;
+	cursor: pointer;
+	border-radius: 0px 5px 5px 0px;
+}
+
+#listsBlock .listsBlock__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+#listsBlock .listsBlock__item p span {
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+#listsBlock .listsBlock__item button {
+	padding: 8px 12px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background: #f00700;
+	color: #fff;
+}

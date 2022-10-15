@@ -1,0 +1,20 @@
+{
+  "name": "crud",
+  "version": "0.0.1",
+  "description": "Group3 CRUD async Application",
+  "main": "index.js",
+  "scripts": {
+    "start" : "json-server db.json -p 8888 -w true"
+  },
+  "keywords": [
+    "CRUD",
+    "Native",
+    "JS",
+    "ToDo"
+  ],
+  "author": "Group3",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}
