@@ -1,11 +1,11 @@
 {
   "todo": [
     {
-      "title": "Learn HTML",
+      "title": "Learn HTML 5",
       "id": 1
     },
     {
-      "title": "Learn CSS",
+      "title": "Learn CSS 3",
       "id": 2
     },
     {
@@ -17,7 +17,7 @@
       "id": 4
     },
     {
-      "title": "Learn VUE",
+      "title": "Learn VUE.js & Remix",
       "id": 5
     }
   ]

@@ -19,19 +19,19 @@ body {
 	margin: 0 auto;
 }
 
-#screenBlock {
+#root #app-form #screenBlock {
 	display: flex;
 	margin-bottom: 24px;
 }
 
-#screenBlock input {
+#root #app-form #screenBlock input {
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 5px 0px 0px 5px;
 	width: 100%;
 }
 
-#screenBlock button {
+#root #app-form #screenBlock #screenBtnAdd {
 	background: #1a90ee;
 	color: #fff;
 	border: none;
@@ -40,23 +40,69 @@ body {
 	border-radius: 0px 5px 5px 0px;
 }
 
-#listsBlock .listsBlock__item {
+#root #app-form #listsBlock .listsBlock__item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 16px;
 }
 
-#listsBlock .listsBlock__item p span {
+#root #app-form #listsBlock .listsBlock__item .listsBlock__item__content span {
 	margin-right: 10px;
-	font-weight: bold;
 }
 
-#listsBlock .listsBlock__item button {
+#root #app-form #listsBlock .listsBlock__item .listsBlock__item__content input {
+	padding: 7px 9px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+#root #app-form #listsBlock .listsBlock__item .listsBlock__item__content input.edit {
+	border-color: #ccc;;
+}
+
+#root #app-form #listsBlock .listsBlock__item .buttons button {
 	padding: 8px 12px;
 	cursor: pointer;
 	border: none;
 	border-radius: 5px;
-	background: #f00700;
 	color: #fff;
+}
+
+#root #app-form #listsBlock .listsBlock__item .buttons [data-rm] {
+	background: #f00700;
+}
+
+#root #app-form #listsBlock .listsBlock__item .buttons [data-ed] {
+	background: #ffc000;
+}
+
+#root #app-form #listsBlock .listsBlock__item .buttons [data-sv] {
+	display: none;
+	background: #d900ff;
+}
+
+#root #app-form #listsBlock .listsBlock__item .buttons [data-rm]:hover {
+	background: #d41504;
+}
+
+#root #app-form #listsBlock .listsBlock__item .buttons [data-ed]:hover {
+	background: #efb403;
+}
+
+#root #app-form #listsBlock .listsBlock__item .buttons [data-sv]:hover {
+	background: #c311e2;
+}
+
+h1 {
+	margin-bottom: 12px;
+	text-align: center;
+	color: #555;
+	letter-spacing: 1.5px;
+}
+
+p {
+	margin-bottom: 12px;
+	text-align: center;
+	color: #566;
 }
