@@ -23,7 +23,6 @@ body {
 	display: flex;
 	margin-bottom: 24px;
 }
-
 #root #app-form #screenBlock input {
 	padding: 10px;
 	border: 1px solid #ccc;
@@ -31,66 +30,70 @@ body {
 	width: 100%;
 }
 
-#root #app-form #screenBlock #screenBtnAdd {
-	background: #1a90ee;
-	color: #fff;
-	border: none;
+#root #app-form #screenBlock #screenAddBtn {
+	background: #1a91d2;
+	border-radius: 0px 5px 5px 0px;
 	padding: 0px 8px;
 	cursor: pointer;
-	border-radius: 0px 5px 5px 0px;
+	color: #fff;
+	border: none;
 }
 
-#root #app-form #listsBlock .listsBlock__item {
+#root #listBlock .listsBlockItem {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 16px;
+	justify-content: space-between;
+	margin-bottom: 12px;
 }
 
-#root #app-form #listsBlock .listsBlock__item .listsBlock__item__content span {
+#root #listBlock .listsBlockItem .listsBlockItemContent span {
+	display: inline-block;
 	margin-right: 10px;
 }
 
-#root #app-form #listsBlock .listsBlock__item .listsBlock__item__content input {
+#root #listBlock .listsBlockItem .listsBlockItemContent input {
+	border: 1px solid transparent;
 	padding: 7px 9px;
 	border-radius: 5px;
-	border: 1px solid transparent;
 }
 
-#root #app-form #listsBlock .listsBlock__item .listsBlock__item__content input.edit {
-	border-color: #ccc;;
+#root #listBlock .listsBlockItem .listsBlockItemContent input.edit {
+	border-color: #ccc;
 }
 
-#root #app-form #listsBlock .listsBlock__item .buttons button {
+
+#root #listBlock .listsBlockItem .buttons button {
 	padding: 8px 12px;
 	cursor: pointer;
 	border: none;
-	border-radius: 5px;
 	color: #fff;
+	border-radius: 6px;
+	transition: 0.3s;
 }
 
-#root #app-form #listsBlock .listsBlock__item .buttons [data-rm] {
-	background: #f00700;
+#root #listBlock .listsBlockItem .buttons .removeBtn {
+	background: #d00100;
 }
 
-#root #app-form #listsBlock .listsBlock__item .buttons [data-ed] {
+
+#root #listBlock .listsBlockItem .buttons .editBtn {
 	background: #ffc000;
 }
 
-#root #app-form #listsBlock .listsBlock__item .buttons [data-sv] {
+#root #listBlock .listsBlockItem .buttons .saveBtn {
 	display: none;
 	background: #d900ff;
 }
 
-#root #app-form #listsBlock .listsBlock__item .buttons [data-rm]:hover {
-	background: #d41504;
+#root #listBlock .listsBlockItem .buttons .removeBtn:hover {
+	background: #e80909;
 }
 
-#root #app-form #listsBlock .listsBlock__item .buttons [data-ed]:hover {
+#root #listBlock .listsBlockItem .buttons .editBtn:hover {
 	background: #efb403;
 }
 
-#root #app-form #listsBlock .listsBlock__item .buttons [data-sv]:hover {
+#root #listBlock .listsBlockItem .buttons .saveBtn:hover {
 	background: #c311e2;
 }
 

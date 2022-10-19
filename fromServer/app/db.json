@@ -1,24 +1,20 @@
 {
-  "todo": [
+  "todos": [
     {
-      "title": "Learn HTML 5",
+      "title": "Learn JavaScript",
       "id": 1
     },
     {
-      "title": "Learn CSS 3",
+      "title": "Learn TypeScript",
       "id": 2
     },
     {
-      "title": "Learn JavaScript",
+      "title": "Learn Vue.js",
       "id": 3
     },
     {
-      "title": "Learn TypeScript",
+      "title": "Learn Node.js + Nest.js",
       "id": 4
-    },
-    {
-      "title": "Learn VUE.js & Remix",
-      "id": 5
     }
   ]
 }
