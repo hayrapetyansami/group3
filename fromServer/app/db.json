@@ -2,18 +2,22 @@
   "todos": [
     {
       "title": "Learn JavaScript",
+      "isComplete": false,
       "id": 1
     },
     {
       "title": "Learn TypeScript",
+      "isComplete": false,
       "id": 2
     },
     {
-      "title": "Learn Vue.js",
+      "title": "Learn async programming",
+      "isComplete": false,
       "id": 3
     },
     {
-      "title": "Learn Node.js + Nest.js",
+      "title": "Learn Async/Await",
+      "isComplete": false,
       "id": 4
     }
   ]
