@@ -4,7 +4,8 @@
   "description": "Group3 CRUD async Application",
   "main": "index.js",
   "scripts": {
-    "start" : "json-server db.json -p 8888 -w true"
+    "dbserv": "json-server db.json -p 8888 -w true",
+    "wpack": "npx webpack"
   },
   "keywords": [
     "CRUD",
@@ -15,6 +16,7 @@
   "author": "Group3",
   "license": "ISC",
   "devDependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "webpack-cli": "^4.10.0"
   }
 }

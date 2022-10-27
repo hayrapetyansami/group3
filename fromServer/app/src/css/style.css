@@ -61,14 +61,64 @@ body {
 	border-color: #ccc;
 }
 
+#root #listBlock .listsBlockItem .buttons {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
 
 #root #listBlock .listsBlockItem .buttons button {
-	padding: 8px 12px;
 	cursor: pointer;
 	border: none;
 	color: #fff;
 	border-radius: 6px;
 	transition: 0.3s;
+	width: 35px;
+	height: 35px;
+}
+
+#root #listBlock .listsBlockItem .buttons input {
+	position: relative;
+	border: none;
+	width: 35px;
+	height: 35px;
+	border-radius: 6px;
+	transition: 0.3s;
+	overflow: hidden;
+	appearance: none;
+	cursor: pointer;
+}
+
+#root #listBlock .listsBlockItem .buttons input::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #21c812;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#root #listBlock .listsBlockItem .buttons input::after {
+	display: none;
+	content: "✔";
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(8px);
+	font-size: 25px;
+	color: #fff;
+}
+
+#root #listBlock .listsBlockItem .buttons input:hover::before {
+	background: #21a112;
+}
+
+#root #listBlock .listsBlockItem .buttons input:checked::after {
+	display: block;
 }
 
 #root #listBlock .listsBlockItem .buttons .removeBtn {
