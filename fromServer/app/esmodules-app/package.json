@@ -1,0 +1,22 @@
+{
+  "name": "crud",
+  "version": "0.0.1",
+  "description": "Group3 CRUD async Application",
+  "main": "index.js",
+  "scripts": {
+    "dbserv": "json-server db.json -p 8888 -w true",
+    "wpack": "npx webpack"
+  },
+  "keywords": [
+    "CRUD",
+    "Native",
+    "JS",
+    "ToDo"
+  ],
+  "author": "Group3",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

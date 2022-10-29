@@ -1,0 +1,176 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+body {
+	padding: 30px;
+	font-family: Arial;
+	background: #ddd;
+}
+
+#root {
+	padding: 30px;
+	background: #fff;
+	border-radius: 5px;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#root #app-form #screenBlock {
+	display: flex;
+	margin-bottom: 24px;
+}
+#root #app-form #screenBlock input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px 0px 0px 5px;
+	width: 100%;
+}
+
+#root #app-form #screenBlock #screenAddBtn {
+	background: #1a91d2;
+	border-radius: 0px 5px 5px 0px;
+	padding: 0px 8px;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+}
+
+#root #listBlock .listsBlockItem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+
+#root #listBlock .listsBlockItem .listsBlockItemContent span {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#root #listBlock .listsBlockItem .listsBlockItemContent input {
+	border: 1px solid transparent;
+	padding: 7px 9px;
+	border-radius: 5px;
+}
+
+#root #listBlock .listsBlockItem .listsBlockItemContent input.edit {
+	border-color: #ccc;
+}
+
+#root #listBlock .listsBlockItem .buttons {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+#root #listBlock .listsBlockItem .buttons button {
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	border-radius: 6px;
+	transition: 0.3s;
+	width: 35px;
+	height: 35px;
+}
+
+#root #listBlock .listsBlockItem .buttons input {
+	position: relative;
+	border: none;
+	width: 35px;
+	height: 35px;
+	border-radius: 6px;
+	transition: 0.3s;
+	overflow: hidden;
+	appearance: none;
+	cursor: pointer;
+}
+
+#root #listBlock .listsBlockItem .buttons input::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #21c812;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#root #listBlock .listsBlockItem .buttons input::after {
+	display: none;
+	content: "✔";
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateX(8px);
+	font-size: 25px;
+	color: #fff;
+}
+
+#root #listBlock .listsBlockItem .buttons input:hover::before {
+	background: #21a112;
+}
+
+#root #listBlock .listsBlockItem .buttons input:checked::after {
+	display: block;
+}
+
+#root #listBlock .listsBlockItem .buttons .removeBtn {
+	background: #d00100;
+}
+
+
+#root #listBlock .listsBlockItem .buttons .editBtn {
+	background: #ffc000;
+}
+
+#root #listBlock .listsBlockItem .buttons .saveBtn {
+	display: none;
+	background: #d900ff;
+}
+
+#root #listBlock .listsBlockItem .buttons .removeBtn:hover {
+	background: #e80909;
+}
+
+#root #listBlock .listsBlockItem .buttons .editBtn:hover {
+	background: #efb403;
+}
+
+#root #listBlock .listsBlockItem .buttons .saveBtn:hover {
+	background: #c311e2;
+}
+
+#root #filterWrapper {
+	display: flex;
+	gap: 6px;
+}
+
+#root #filterWrapper button {
+	border: none;
+	background: #05a4c1;
+	color: #fff;
+	padding: 8px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+
+h1 {
+	margin-bottom: 12px;
+	text-align: center;
+	color: #555;
+	letter-spacing: 1.5px;
+}
+
+p {
+	margin-bottom: 12px;
+	text-align: center;
+	color: #566;
+}
