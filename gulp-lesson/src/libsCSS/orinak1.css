@@ -1,0 +1,7 @@
+code {
+	display: flex;
+	justify-content: space-between;
+	font-size: 25px;
+	color: #c00111;
+	font-family: tahoma;
+}

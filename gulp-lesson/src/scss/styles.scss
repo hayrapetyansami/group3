@@ -1,0 +1,46 @@
+@import "./modules/reset";
+@import "./modules/main";
+
+$br : 6px;
+
+body {
+	background: #888;
+	font-family: Arial
+}
+
+aside {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 20px;
+}
+
+#root {
+	padding: 30px;
+	background: #fefefe;
+	max-width: 600px;
+	margin: 50px auto;
+	border-radius: $br;
+
+	h1, h3 {
+		margin-bottom: 16px;
+		letter-spacing: 2px;
+	}
+
+	p {
+		text-align: justify;
+		margin-bottom: 12px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		background: #1a1a1a;
+
+		#root {
+			max-width: 400px;
+			h1 {
+				color: pink
+			}
+		}
+	}
+}

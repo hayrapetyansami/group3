@@ -1,0 +1,17 @@
+main {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: center;
+
+	.content {
+		background-color: linear-gradient(to top, #ff0, #00f);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		display: unset;
+		width: 100vw;
+	}
+}
