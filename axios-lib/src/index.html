@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: 0;
+		}
+
+		#content {
+			padding: 30px;
+			max-width: 600px;
+			margin: 50px auto;
+		}
+
+		#content form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#content form input, textarea {
+			padding: 10px 16px;
+			border: 1px solid #ccc;
+			border-radius: 6px;
+			margin-bottom: 12px;
+		}
+
+		#content form textarea {
+			resize: none;
+			min-height: 200px;
+		}
+
+		#content form button {
+			padding: 10px;
+			background: #aa2288;
+			border: 1px solid #aa2288;
+			border-radius: 6px;
+			color: #fff;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<form>
+			<input type="text" name="title" placeholder="Title here...">
+			<input type="text" name="author" placeholder="Author name...">
+			<textarea name="text" placeholder="Type here..."></textarea>
+			<button>SUBMIT</button>
+		</form>
+	</div>
+	
+	<script src="../build/all.js"></script>
+</body>
+</html>
