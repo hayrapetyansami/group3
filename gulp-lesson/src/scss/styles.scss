@@ -1,11 +1,12 @@
-@import "./modules/reset";
-@import "./modules/main";
+@import "./components/reset";
+@import "./components/main";
+@import "./components/fonts";
 
 $br : 6px;
 
 body {
 	background: #888;
-	font-family: Arial
+	font-family: monRegular;
 }
 
 aside {
@@ -38,8 +39,9 @@ aside {
 
 		#root {
 			max-width: 400px;
+
 			h1 {
-				color: pink
+				color: #f0f;
 			}
 		}
 	}

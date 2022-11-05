@@ -1,9 +1,9 @@
 pre {
 	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+	justify-content: space-between;
 	font-size: 25px;
-	color: #c00111;
-	font-family: tahoma;
-	box-sizing: content-box; 
+	color: #41c001;
+	font-family: Verdana;
+	padding: 10px;
+	background: #1a1a1a;
 }

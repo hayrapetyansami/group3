@@ -85,20 +85,20 @@ async function toClear () {
 
 // task for fonts
 async function fonts () {
-	return gulp.src("./src/fonts/*")
+	return gulp.src("./src/fonts/**/*")
 		.pipe(gulp.dest(path+"/fonts"));
 }
 
 // task for other js files (libs)
 async function libsJS () {
-	return gulp.src("./src/libsJS/*")
+	return gulp.src("./src/libsJS/**/*.js")
 		.pipe(gulp.dest(path+"/libsJS"))
 		.pipe(browserSync.stream());
 }
 
 // task for all html files with htmlmin plugin
 async function htmls () {
-	return gulp.src("./src/*.html")
+	return gulp.src("./src/**/*.html")
 		.pipe(htmlmin({ 
 			collapseWhitespace: true,
 			removeTagWhitespace: true
@@ -114,14 +114,14 @@ async function watch () {
 		port: 4587 // default: 3000
 	});
 
-	gulp.watch("./src/scss/styles.scss", preproc);
+	gulp.watch("./src/scss/**/*.scss", preproc);
 	gulp.watch("./src/libsCSS/**/*.css", libsCSS);
 	gulp.watch("./src/js/**/*.js", scripts);
 	gulp.watch("./src/img/**/*", pictures);
-	gulp.watch("./src/fonts/*", fonts);
-	gulp.watch("./src/libsJS/*", libsJS);
-	gulp.watch("./src/*.html", htmls);
-	gulp.watch("./*.html").on("change", browserSync.reload)
+	gulp.watch("./src/fonts/**/*", fonts);
+	gulp.watch("./src/libsJS/**/*.js", libsJS);
+	gulp.watch("./src/**/*.html", htmls);
+	gulp.watch("./**/*.html").on("change", browserSync.reload)
 }
 
 // different tasks

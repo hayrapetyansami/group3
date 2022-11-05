@@ -1,9 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
-	const name = "Alex";
-
 	const user = {
-		name: name,
-		age: 35,
+		name: "Alex",
+		age: 42,
 		city: "NY"
 	};
 
